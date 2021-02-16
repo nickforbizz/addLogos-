@@ -1,0 +1,15 @@
+{
+  "name": "addlogos",
+  "version": "1.0.0",
+  "description": "an application to add logos and texts to images",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "nicholas.wainaina",
+  "license": "ISC",
+  "dependencies": {
+    "cli-progress": "^3.8.2",
+    "jimp": "^0.16.1"
+  }
+}

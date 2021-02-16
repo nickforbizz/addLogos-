@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>applyLogo</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+        <section class="container">
+            <div class="header mt-5">
+                <h2>Add Logo</h2>
+            </div>
+            <div class="justify-content-center">
+                <form class="form" id="process_imgs_form">
+                    <div class="row">
+                        <div class="mb-3 col-sm-12">
+                            <label for="imgs" class="form-label">Add image(s)</label>
+                            <input type="file" class="form-control" id="imgs" multiple>
+                        </div>
+                        <div class="mb-3 col-sm-3">
+                            <input type="submit" class="form-control" id="process_imgs_btn" value="Process">
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+<script>
+    $("#process_imgs_form").submit((e) => {
+        e.preventDefault();
+
+        let imgs = $("#imgs").val();
+        console.log(imgs); 
+    });
+</script>
+</body>
+</html>
