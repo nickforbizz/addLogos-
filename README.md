@@ -1,4 +1,4 @@
-ADDLOGOS
+** ADDLOGOS **
 This is an automation to add logos to the images for phographers
 
 Simply copy all images to /images folder atmost 150
